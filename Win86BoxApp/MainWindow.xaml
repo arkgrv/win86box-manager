@@ -9,7 +9,7 @@
     xmlns:System="clr-namespace:System;assembly=System.Runtime">
 
     <Grid>
-        
+
         <Menu x:Name="MainMenuStrip" Height="20" VerticalAlignment="Top" >
             <MenuItem x:Name="FileMenuItem" Header="File">
                 <MenuItem x:Name="NewVMMenuItem" Header="New VM"/>
@@ -48,7 +48,43 @@
                 <MenuItem x:Name="AboutMenuItem" Header="About" />
             </MenuItem>
         </Menu>
-        <Menu x:Name="ToolsStrip" Height="50" VerticalAlignment="Top" Margin="0,20,0,0"/>
+        
+        <Menu x:Name="ToolsStrip" Height="70" VerticalAlignment="Top" Margin="0,20,0,0">
+            <Button x:Name="NewVMButton" Height="68" Width="68">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/14 - new.png" Height="35"/>
+                    <Label HorizontalAlignment="Center" Content="New VM" />
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="NewHDDImageButton" Height="68" Width="68">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/28 - new_hdd.png" Height="35"/>
+                    <Label HorizontalAlignment="Center" Content="New HDD" />
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="StopAllVMButton" Height="68" Width="68">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/20 - stop_all.png" Height="35" />
+                    <Label HorizontalAlignment="Center" Content="Stop All" />
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="UpdateListButton" Height="68" Width="68">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/16 - reload.png" Height="35" />
+                    <Label HorizontalAlignment="Center" Content="Update" />
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="SettingsButton" Height="68" Width="68">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/29 - gears2.png" Height="35" />
+                    <Label HorizontalAlignment="Center" Content="Settings" />
+                </StackPanel>
+            </Button>
+        </Menu>
 
     </Grid>
 </Window>

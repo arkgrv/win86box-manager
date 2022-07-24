@@ -8,7 +8,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="14 - new.png" />
+    <None Remove="16 - reload.png" />
+    <None Remove="20 - stop_all.png" />
+    <None Remove="28 - new_hdd.png" />
+    <None Remove="29 - gears2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\Icons\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="14 - new.png" />
+    <Resource Include="16 - reload.png" />
+    <Resource Include="20 - stop_all.png" />
+    <Resource Include="28 - new_hdd.png" />
+    <Resource Include="29 - gears2.png" />
   </ItemGroup>
 
 </Project>
