@@ -1,0 +1,54 @@
+﻿<Window x:Class="Win86BoxApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Win86BoxApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+    xmlns:System="clr-namespace:System;assembly=System.Runtime">
+
+    <Grid>
+        
+        <Menu x:Name="MainMenuStrip" Height="20" VerticalAlignment="Top" >
+            <MenuItem x:Name="FileMenuItem" Header="File">
+                <MenuItem x:Name="NewVMMenuItem" Header="New VM"/>
+                <MenuItem x:Name="NewHDDMenuItem" Header="New HDD Image"/>
+                <Separator/>
+                <MenuItem x:Name="ImportExistingVMItem" Header="Import Existing VM"/>
+                <MenuItem x:Name="NewFDDImageItem" Header="New FDD Image"/>
+                <Separator/>
+                <MenuItem x:Name="ShutdownAllVMsItem" Header="Shutdown All VMs"/>
+                <MenuItem x:Name="ForceShutdownAllVMItem" Header="Force Shutdown All VMs"/>
+                <Separator/>
+                <MenuItem x:Name="DeleteVMItem" Header="Delete VM"/>
+                <Separator/>
+                <MenuItem x:Name="ExitItem" Header="Exit" Click="ExitItem_Click"/>
+            </MenuItem>
+
+            <MenuItem x:Name="VMMenuItem" Header="VM">
+                <MenuItem x:Name="StartVMItem" Header="Start VM"/>
+                <MenuItem x:Name="PauseVMItem" Header="Pause VM"/>
+                <Separator/>
+                <MenuItem x:Name="SendCtrlAltDeleteItem" Header="Send CTRL+ALT+DEL"/>
+                <MenuItem x:Name="SendCtrlAltEscItem" Header="Send CTRL+ALT+ESC"/>
+                <MenuItem x:Name="ResetVMItem" Header="Reset VM"/>
+                <Separator/>
+                <MenuItem x:Name="ShutdownVMItem" Header="Shutdown VM"/>
+                <MenuItem x:Name="ForceShutdownVMItem" Header="Force Shutdown VM"/>
+                <Separator/>
+                <MenuItem x:Name="VMHardwareSettingsItem" Header="VM Hardware Settings"/>
+                <MenuItem x:Name="VMProfileSettingsItem" Header="VM Profile Settings"/>
+            </MenuItem>
+
+            <MenuItem x:Name="ToolsMenuItem" Header="Tools">
+            </MenuItem>
+
+            <MenuItem x:Name="HelpMenuItem" Header="Help">
+                <MenuItem x:Name="AboutMenuItem" Header="About" />
+            </MenuItem>
+        </Menu>
+        <Menu x:Name="ToolsStrip" Height="50" VerticalAlignment="Top" Margin="0,20,0,0"/>
+
+    </Grid>
+</Window>

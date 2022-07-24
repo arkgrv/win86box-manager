@@ -1,0 +1,19 @@
+﻿<Application x:Class="Win86BoxApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Win86BoxApp"
+             StartupUri="MainWindow.xaml"
+    xmlns:System="clr-namespace:System;assembly=System.Runtime">
+    <Application.Resources>
+         
+        <System:String x:Key="FileMenuItemHeader">File</System:String>
+        <System:String x:Key="NewVMMenuItemHeader">New VM</System:String>
+        <System:String x:Key="NewHDDMenuItemHeader">New Virtual HDD</System:String>
+        <System:String x:Key="ImportExistingVMItemHeader">Import Existing VM</System:String>
+        <System:String x:Key="NewFDDImageItemHeader">New Floppy Image File</System:String>
+        <System:String x:Key="StopAllVMItemHeader">Stop All VMs</System:String>
+        <System:String x:Key="TerminateAllVMsHeader">Terminate All VMs</System:String>
+        <System:String x:Key="DeleteVMItemHeader">Delete VM</System:String>
+        <System:String x:Key="ExitItemHeader">Exit</System:String>
+    </Application.Resources>
+</Application>
